@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-web
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: java-web
+  template:
+    metadata:
+      labels:
+        app: java-web
+    spec:
+      containers:
+      - name: java-web
+        image: tarunscaler/demo:v2
+        ports:
+        - containerPort: 80

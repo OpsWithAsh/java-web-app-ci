@@ -1,0 +1,12 @@
+- name: Update and install packages on target server
+  hosts: target
+  become: true
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Ensure Nginx is installed
+      apt:
+        name: nginx
+        state: present

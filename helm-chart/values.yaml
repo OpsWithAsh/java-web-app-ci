@@ -1,0 +1,9 @@
+image:
+  repository: tarunscaler/demo
+  tag: v1
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 8080
+  nodePort: 30000

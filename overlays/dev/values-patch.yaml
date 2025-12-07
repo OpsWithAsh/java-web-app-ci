@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-web-2
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - name: java-web
+        image: nginx:stable
