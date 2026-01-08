@@ -1,0 +1,21 @@
+# Maven
+target/
+*.log
+
+# Jenkins
+workspace/
+
+# OS
+.DS_Store
+
+# Security tools
+ZAP_2.15.0/
+ZAP_2.15.0_Linux.tar.gz
+
+# Kubernetes
+*.kubeconfig
+
+# Secrets
+*.pem
+.env
+
